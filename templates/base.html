@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}Мой сайт{% endblock %}</title>
+    <style>
+        .main-menu-link {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #f0f0f0;
+            margin: 5px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        
+        .menu-container ul {
+            list-style: none;
+            padding-left: 20px;
+        }
+        
+        .menu-container .menu-level-0 {
+            padding-left: 0;
+        }
+        
+        .menu-container li {
+            margin: 5px 0;
+        }
+        
+        .menu-container a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        
+        .menu-container a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    {% block content %}{% endblock %}
+</body>
+</html>

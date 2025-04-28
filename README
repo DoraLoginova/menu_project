@@ -1,0 +1,69 @@
+# Menu Project 
+
+Проект реализует динамическую систему меню для сайта на Django с возможностью управления через админ-панель.
+
+## Основные возможности
+
+- Древовидная структура меню с неограниченным уровнем вложенности
+- Управление через стандартную админ-панель Django
+- Поддержка как прямых URL, так и именованных URL-шаблонов
+- Автоматическое определение активного пункта меню
+- Кэширование для оптимизации производительности
+
+## Установка и настройка
+
+1. Клонировать репозиторий:
+```
+git clone https://github.com/DoraLoginova/menu_project.git
+cd menu_project
+
+```
+2. Создать и активировать виртуальное окружение:
+
+```
+python -m venv venv
+source venv/bin/activate  # Linux/Mac
+venv\Scripts\activate     # Windows
+```
+3. Добавьте .env:
+```
+
+SECRET_KEY=django-insecure-rs3+*kjs(9!gpnuj%m-d$n1@^spmk_yaqhc3a4@d@pniua7ezm
+ALLOWED_HOSTS=localhost,127.0.0.1
+
+```
+4. Установить зависимости:
+```
+pip install -r requirements.txt
+```
+5. Настройка базы данных:
+```
+python manage.py makemigrations
+python manage.py migrate
+```
+6. Создать суперпользователя:
+
+```
+python manage.py createsuperuser
+```
+7. Собрать статические файлы:
+```
+python manage.py collectstatic
+```
+Запуск проекта
+```
+python manage.py runserver
+
+```
+После запуска проект будет доступен по адресу:
+http://127.0.0.1:8000/
+
+Админ-панель:
+http://127.0.0.1:8000/admin/
+
+Использование
+В админ-панели создайте меню (укажите slug, например 'main-menu')
+
+Добавьте пункты меню, устанавливая родительские элементы для создания иерархии
+
+Автор: [Дора Логинова](https://github.com/DoraLoginova)

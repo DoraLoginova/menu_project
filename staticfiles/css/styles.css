@@ -1,0 +1,77 @@
+.home-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.tagline {
+  font-size: 1.5rem;
+  margin: 1rem 0 2rem;
+  font-style: italic;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 12px 30px;
+  background: #ff6b6b;
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.cta-button:hover {
+  background: #ff5252;
+  transform: translateY(-3px);
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.feature-card {
+  padding: 2rem;
+  background: #f9f9f9;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+}
+
+.icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.quick-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.link-button {
+  padding: 10px 20px;
+  border: 2px solid #ff6b6b;
+  color: #ff6b6b;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.link-button:hover {
+  background: #ff6b6b;
+  color: white;
+}
+
+.admin-link {
+  color: #666;
+  font-size: 0.9rem;
+}
