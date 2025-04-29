@@ -26,3 +26,8 @@ venv/
 .DS_Store
 *.DS_Store
 **/.DS_Store
+
+# Базы данных SQLite
+*.sqlite3
+*.db
+*.sqlite
